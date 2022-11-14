@@ -1,0 +1,33 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_interestPaymentAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "allocateRewards",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "poolAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "setPoolTokenAccRewardsPerPrincipalDollarAtMint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

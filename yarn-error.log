@@ -1,0 +1,102 @@
+Arguments: 
+  /Users/sotatek/.nvm/versions/node/v16.0.0/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js
+
+PATH: 
+  /Users/sotatek/.nvm/versions/node/v16.0.0/bin:/Users/sotatek/Library/Python/3.8/bin/:/Users/sotatek/.local/share/solana/install/active_release/bin:/usr/loca/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin/:/usr/local/bin/lvim:/Users/sotatek/.cargo/bin:/sbin:/Users/sotatek/.local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.0.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/sotatek/Projects/Ovenue-defi/package.json: Unexpected token } in JSON at position 218
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "Ovenue_Defi",
+      "version": "1.0.0",
+      "main": "index.js",
+      "license": "MIT",
+      "dependencies": {
+          "bignumber.js": "^9.0.2",
+          "dotenv": "^16.0.1",
+          "hardhat": "^2.10.1",
+      },
+      "scripts": {
+          "husky:prepare": "husky install",
+          "bsc:deploy": "hardhat deploy --network bsc --reset",
+          "mainnet:deploy": "hardhat deploy --network mainnet --reset",
+          "rinkeby:deploy": "hardhat deploy --network rinkeby --reset",
+          "mainnet:verify": "hardhat --network mainnet etherscan-verify --solc-input",
+          "rinkeby:verify": "hardhat --network rinkeby etherscan-verify --solc-input",
+          "bsc:verify": "hardhat --network bsc etherscan-verify --solc-input",
+          "export:storage": "hardhat check",
+          "size-contracts": "hardhat size-contracts",
+          "watch": "hardhat watch compile",
+          "test:watch": "hardhat watch test",
+          "test": "hardhat test",
+          "test:coverage": "cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" hardhat coverage",
+          "test:gas": "cross-env REPORT_GAS=true yarn test",
+          "docgen": "hardhat compile && hardhat docgen",
+          "compile": "npx hardhat compile",
+          "prepare": "husky install"
+      },
+      "lint-staged": {
+          "*.sol": [
+              "solhint -c .solhint.json",
+              "prettier --write",
+              "yarn test"
+          ],
+          "*.md": "prettier --write"
+      },
+      "devDependencies": {
+          "@ethersproject/abi": "^5.4.7",
+          "@ethersproject/providers": "^5.4.7",
+          "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+          "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+          "@nomicfoundation/hardhat-toolbox": "^1.0.1",
+          "@nomiclabs/hardhat-ethers": "^2.0.0",
+          "@nomiclabs/hardhat-etherscan": "^3.0.0",
+          "@openzeppelin/contracts": "^4.1.0",
+          "@tenderly/hardhat-tenderly": "^1.0.13",
+          "@typechain/ethers-v5": "^10.1.0",
+          "@typechain/hardhat": "^6.1.2",
+          "@types/chai": "^4.2.0",
+          "@types/mocha": "^9.1.0",
+          "@types/node": ">=12.0.0",
+          "chai": "^4.2.0",
+          "ethers": "^5.4.7",
+          "hardhat-abi-exporter": "^2.2.1",
+          "hardhat-contract-sizer": "^2.5.1",
+          "hardhat-deploy": "^0.7.0-beta.44",
+          "hardhat-docgen": "^1.3.0",
+          "hardhat-gas-reporter": "^1.0.8",
+          "hardhat-log-remover": "^2.0.2",
+          "hardhat-preprocessor": "^0.1.4",
+          "hardhat-storage-layout": "^0.1.6",
+          "hardhat-watcher": "^2.1.1",
+          "hardhat-address-exporter": "^0.0.4",
+          "husky": "^8.0.0",
+          "lint-staged": "^12.3.8",
+          "solidity-coverage": "^0.7.21",
+          "ts-node": ">=8.0.0",
+          "typechain": "^8.1.0",
+          "typescript": ">=4.5.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

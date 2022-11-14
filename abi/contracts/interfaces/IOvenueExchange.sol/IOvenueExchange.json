@@ -1,0 +1,127 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address[6]",
+        "name": "addrs",
+        "type": "address[6]"
+      },
+      {
+        "internalType": "uint256[6]",
+        "name": "uints",
+        "type": "uint256[6]"
+      },
+      {
+        "internalType": "enum SaleKindInterface.Side",
+        "name": "side",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum SaleKindInterface.SaleKind",
+        "name": "saleKind",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum IOvenueExchange.HowToCall",
+        "name": "howToCall",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes",
+        "name": "callData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "replacementPattern",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bool",
+        "name": "orderbookInclusionDesired",
+        "type": "bool"
+      }
+    ],
+    "name": "approveOrder_",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[6]",
+        "name": "addrs",
+        "type": "address[6]"
+      },
+      {
+        "internalType": "uint256[6]",
+        "name": "uints",
+        "type": "uint256[6]"
+      },
+      {
+        "internalType": "enum SaleKindInterface.Side",
+        "name": "side",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum SaleKindInterface.SaleKind",
+        "name": "saleKind",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum IOvenueExchange.HowToCall",
+        "name": "howToCall",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes",
+        "name": "callData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "replacementPattern",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint8",
+        "name": "v",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "r",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "s",
+        "type": "bytes32"
+      }
+    ],
+    "name": "cancelOrder_",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "orderHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "cancelledOrFinalized",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

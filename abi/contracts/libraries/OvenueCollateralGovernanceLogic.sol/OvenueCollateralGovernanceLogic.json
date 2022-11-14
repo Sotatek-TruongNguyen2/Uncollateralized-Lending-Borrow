@@ -1,0 +1,12 @@
+[
+  {
+    "inputs": [],
+    "name": "InvalidVotingType",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VoteAlreadyBeenCasted",
+    "type": "error"
+  }
+]

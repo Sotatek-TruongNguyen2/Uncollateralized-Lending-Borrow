@@ -1,0 +1,50 @@
+[
+  {
+    "inputs": [],
+    "name": "InvalidPoolGovernor",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotExceedsLatenessGracePeriod",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "poolAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalOwned",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "JuniorPoolDebtRecover",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "INVERSE_BASIS_POINT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "createBorrower",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "createCreditLine",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_juniorFeePercent",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_interestApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_paymentPeriodInDays",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_termInDays",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_lateFeeApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_allowedUIDTypes",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "createMigratedPool",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_juniorFeePercent",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_interestApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_paymentPeriodInDays",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_termInDays",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_lateFeeApr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_allowedUIDTypes",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "createPool",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "updateGoldfinchConfig",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
